@@ -9,6 +9,10 @@ img {
     max-width: 100%;
 }
 
+ul, li {
+    list-style: none;
+}
+
 .flex {
     display: flex;
 }
@@ -23,19 +27,70 @@ img {
     height: calc(100vh - 80px);
 }
 
+/* CSS SIDEBAR  */
+
 .col-1 {
     width: 240px;
     background-color: black;
+    padding: 20px;
 }
 
 .logo_box {
-    padding: 20px 0;
-    padding-left: 20px;
-    padding-right: 75px;
+    padding-right: 50px;
+    padding-bottom: 25px;
 }
 
 .icon {
     color: white;
+    font-size: 22px;
+    padding: 5px 0;
+}
+
+.icon .icon_active {
+    color: white;
+    padding-left: 4px;
+}
+
+.icon li {
+    padding: 5px 0;
+}
+
+.icon span {
+    color: grey;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0px 5px;
+}
+
+.col-1 h2 {
+    color: white;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.crea_playlist i {
+    background-color: grey;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.crea_playlist span {
+    font-size: 14px;
+    color: grey;
+    padding: 0px 5px;
+    font-weight: 700;
+}
+
+.crea_playlist li {
+    color: grey;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.crea_playlist li:first-of-type {
+    padding-top: 20px;
 }
 
 .col-2 {
