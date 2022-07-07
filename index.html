@@ -58,7 +58,7 @@
                 <hr>
                 <div class="box_img_profile flex">
                     <img src="img/profile.svg" alt="">
-                    <span>John Doe</span>               
+                    <a>John Doe</a>               
                 </div>                  
             </div> <!-- Chiusura Sidebar Bottom-->           
         </div> <!-- Chiusura Sidebar -->
@@ -67,8 +67,8 @@
             
         </div>
 
-        <footer class="player flex"> <!-- Inizio Player-->
-            <div class="col-1 flex">
+        <footer class="player flex"> <!-- Inizio Player -->
+            <div class="col-1 flex"> <!-- Inizio COlonna 1 -->
                 <div class="cover_album">
                     <img src="img/sinister.jpeg" alt="">
                 </div>
@@ -76,20 +76,42 @@
                     <h5 class="nome_brano">Sinister</h5>
                     <a class="nome_artista">Nome Artista</a>
                 </div>
-                <div class="icon_player flex">
+                <div class="icon_song flex">
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
-            </div> <!-- Chiusura Colonna 1-->
+            </div> <!-- Chiusura Colonna 1 -->
             <div class="col-2">
+                <div class="icon_player flex">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                </div>
+                <div class="container_barra_canzone flex">
+                    <span>0:25</span>
+                    <hr class="barra_canzone barra_canzone_active">
+                    <hr class="barra_canzone">
+                    <span>4:35</span>
+                </div>
 
             </div>
-            <div class="col-3">
 
+            <div class="col-3 flex">
+                <div class="icon_player flex">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="container_barra_volume flex">
+                        <hr class="barra_volume_active">
+                        <hr class="barra_volume">
+                    </div>
             </div>
 
         </footer>
-    </div> <!-- Chiusura Main Container-->
+    </div> <!-- Chiusura Main Container -->
     
     
 </body>

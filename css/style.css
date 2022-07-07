@@ -30,7 +30,7 @@ ul, li {
 /* CSS SIDEBAR  */
 
 .sidebar {
-    width: 300px;
+    width: 240px;
     background-color: black;
     padding: 20px;
     justify-content: space-between;
@@ -144,6 +144,7 @@ ul, li {
     font-weight: 700;
 }
 
+/* Smartphone */
 @media (max-width:480px) {
     .logo_desktop {
         display: none;
@@ -188,11 +189,9 @@ ul, li {
     .sidebar_bottom {
         display: flex;
         flex-direction: column;
-    }
-    
+    }    
 }
  /* FINE CSS SIDEBAR */
-
 
 .contenuto {
     flex-grow: 1;
@@ -208,6 +207,7 @@ ul, li {
     position: fixed;
     bottom: 0;
     right: 0;
+    padding: 10px;
     background-color: #282828;
 }
 
@@ -224,10 +224,7 @@ ul, li {
     align-items: center;
     gap: 35px;
     color: grey;
-}
-
-.cover_album {
-    margin-left: 10px;
+    padding-right: 10px;
 }
 
 .dettagli_brano {
@@ -243,10 +240,122 @@ ul, li {
     font-size: 13px;
 }
 
-.icon_player {
+.icon_song {
     gap: 10px;
 }
 
 .col-1 img {
     width: 70px;    
+}
+
+/* COLONNA 2 */
+
+.icon_player {
+    color: white;
+    gap: 20px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-2 i:nth-child(3) {
+    font-size: 25px;
+}
+
+.container_barra_canzone {
+    justify-content: center;
+}
+
+.barra_canzone {
+    width: 50%;
+    min-width: 25%;
+    height: 4px;
+    background-color: #5A5A5A;
+    margin-top: 30px;
+    border-radius: 5px;    
+}
+
+.barra_canzone_active {
+    width: 10%;
+    min-width: 4%;
+    background-color: #C1C1C1;
+}
+
+.container_barra_canzone span {
+    color: white;
+    margin: 23px 20px;
+    font-size: 13px;
+}
+
+.col-3 {
+    justify-content: flex-end;
+}
+
+.barra_volume_active {
+    width: 10%;
+    
+}
+
+.barra_volume_active {
+    width: 25%;
+    background-color: #C1C1C1;
+    border-radius: 5px;
+}
+
+.barra_volume {
+    width: 80px;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 5px;
+}
+
+@media (max-width:1024px) {
+    .icon_song {
+        flex-direction: column;
+        margin-left: -20px;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .icon_song {
+        flex-direction: column;
+        margin-left: -20px;
+        font-size: 12px;
+    }
+
+    .icon_player {
+        gap: 10px;
+    }
+    
+    .barra_volume {
+        width: 60px;
+    }
+
+    .container_barra_canzone span {
+        color: white;
+        margin: 22px 10px;
+        font-size: 11px;
+    }
+
+    .container_barra_canzone hr, span {
+        display: inline-block;
+    }
+
+    .container_barra_volume hr {
+        display: block;
+    }
+
+    .nome_brano {
+        font-size: 11px;
+    }
+
+    .dettagli_brano {
+        margin-left: -27px;
+
+    /* .nome_artista {
+        font-size: 9px;
+    } */
+    }
 }
