@@ -12,31 +12,32 @@
     <title>Spotify Web</title>
 </head>
 <body>
-    <div class="container flex">
-        <div class="col-1 flex_column"> <!-- Inizio Sidebar -->
+    <div class="container flex"> <!-- Container Sidebar e Main-->
+        <div class="sidebar flex_column"> <!-- Inizio Sidebar -->
             <div class="sidebar_top"> <!-- Inizio Sidebar Top -->
                 <div class="logo_box">
-                    <img src="img/logo.svg" alt="">
+                    <img class="logo_desktop" src="img/logo.svg" alt="Logo Spotify">
+                    <img class="logo-mobile" src="img/logo-small.svg" alt="Logo Spotify">
                 </div>                        
                 <ul class="icon"> <!-- Inizio Icons Sidebar -->
                     <li>
                         <i class="fa-solid fa-house"></i> 
-                        <span class="icon_active">Home</span>
+                        <a class="icon_active">Home</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-magnifying-glass"></i> 
-                        <span>Cerca</span>
+                        <a>Cerca</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-swatchbook"></i> 
-                        <span>La tua libreria</span>
+                        <a>La tua libreria</a>
                     </li>
                 </ul> <!-- Fine Icons Sidebar -->          
                 
-                <div>
-                    <h2>PLAYLIST</h2>
-                </div>
-                <div class="crea_playlist">
+                <div class="playlist">
+                    <div>
+                        <h2>PLAYLIST</h2>
+                    </div>
                     <i class="fa-solid fa-plus"></i>
                     <span> Crea Playlist</span>
                     <ul>
@@ -53,7 +54,7 @@
 
             <div class="sidebar_bottom"> <!-- Inizio Sidebar Bottom-->          
                 <i class="fa-solid fa-circle-arrow-down"></i>
-                <h6>Installa app</h6>
+                <a>Installa app</a>
                 <hr>
                 <div class="box_img_profile flex">
                     <img src="img/profile.svg" alt="">
@@ -62,11 +63,30 @@
             </div> <!-- Chiusura Sidebar Bottom-->           
         </div> <!-- Chiusura Sidebar -->
 
-        <div class="col-2"> <!-- Inizio Main-->
+        <div class="contenuto"> <!-- Inizio Main-->
             
         </div>
 
-        <footer class="player"> <!-- Inizio Player-->
+        <footer class="player flex"> <!-- Inizio Player-->
+            <div class="col-1 flex">
+                <div class="cover_album">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="dettagli_brano">
+                    <h5 class="nome_brano">Sinister</h5>
+                    <a class="nome_artista">Nome Artista</a>
+                </div>
+                <div class="icon_player flex">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div> <!-- Chiusura Colonna 1-->
+            <div class="col-2">
+
+            </div>
+            <div class="col-3">
+
+            </div>
 
         </footer>
     </div> <!-- Chiusura Main Container-->

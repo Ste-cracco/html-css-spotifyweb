@@ -24,13 +24,13 @@ ul, li {
 
 .container {
     position: relative;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
 }
 
 /* CSS SIDEBAR  */
 
-.col-1 {
-    width: 240px;
+.sidebar {
+    width: 300px;
     background-color: black;
     padding: 20px;
     justify-content: space-between;
@@ -39,12 +39,20 @@ ul, li {
 /* CSS SIDEBAR - Sidebar Top */
 
 .logo_box {
-    padding-right: 50px;
     padding-bottom: 25px;
 }
 
+.logo_desktop {
+    width: 180px;
+}
+
+.logo-mobile {
+    width: 35px;
+    display: none;
+}
+
 .icon {
-    color: white;
+    color: lightgrey;
     font-size: 22px;
     padding: 5px 0;
 }
@@ -58,11 +66,12 @@ ul, li {
     padding: 5px 0;
 }
 
-.icon span {
+.icon a {
     color: grey;
     font-size: 13px;
     font-weight: 700;
     padding: 0px 5px;
+    cursor: pointer;
 }
 
 .col-1 h2 {
@@ -72,27 +81,34 @@ ul, li {
     padding-bottom: 10px;
 }
 
-.crea_playlist i {
+.playlist i {
     background-color: grey;
     padding: 10px;
     font-size: 20px;
 }
 
-.crea_playlist span {
+.playlist span {
     font-size: 14px;
     color: grey;
     padding: 0px 5px;
     font-weight: 700;
 }
 
-.crea_playlist li {
+.playlist li {
     color: grey;
     font-size: 13px;
     font-weight: 700;
     padding: 10px 0;
 }
 
-.crea_playlist li:first-of-type {
+.playlist h2 {
+    color: white;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.playlist li:first-of-type {
     padding-top: 20px;
 }
 
@@ -102,11 +118,12 @@ ul, li {
     color: grey;
 }
 
-.sidebar_bottom h6 {
+.sidebar_bottom a {
     font-size: 13px;
     display: inline-block;
     padding: 10px 5px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .box_img_profile {
@@ -119,27 +136,117 @@ ul, li {
     background-color: gray;
     border-radius: 100px;
     width: 30px;
+    cursor: pointer;
 }
 
 .box_img_profile span {
     color: white;
     font-weight: 700;
 }
+
+@media (max-width:480px) {
+    .logo_desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .logo_box {
+        padding: 0;
+}
+
+    .playlist {
+        display: none;
+    }
+
+    .sidebar {
+        width: 50px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .sidebar_bottom a, hr, span {
+        display: none;
+    }
+
+    .icon a {
+        display: none;
+    }
+
+    .icon li {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .sidebar i {
+        align-self: center;
+    }
+
+    .sidebar_bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
  /* FINE CSS SIDEBAR */
 
 
-.col-2 {
+.contenuto {
     flex-grow: 1;
     overflow: scroll;
     overflow-x: hidden;
     background-color: #141922;
 }
 
+/* FOOTER */
 .player {
-    height: 80px;
+    height: 100px;
     width: 100%;
     position: fixed;
     bottom: 0;
     right: 0;
     background-color: #282828;
+}
+
+.col-1, .col-3 {
+    flex-grow: 1;
+}
+
+.col-2 {
+    flex-grow: 4;
+}
+
+/* COLONNA 1 */
+.col-1 {
+    align-items: center;
+    gap: 35px;
+    color: grey;
+}
+
+.cover_album {
+    margin-left: 10px;
+}
+
+.dettagli_brano {
+    margin-left: -20px;
+}
+
+.nome_brano {
+    color: white;
+    font-size: 15px;
+}
+
+.nome_artista {
+    font-size: 13px;
+}
+
+.icon_player {
+    gap: 10px;
+}
+
+.col-1 img {
+    width: 70px;    
 }
