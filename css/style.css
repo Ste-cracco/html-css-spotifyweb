@@ -17,6 +17,11 @@ ul, li {
     display: flex;
 }
 
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .flex_column {
     display: flex;
     flex-direction: column;
@@ -28,7 +33,6 @@ ul, li {
 }
 
 /* CSS SIDEBAR  */
-
 .sidebar {
     width: 240px;
     background-color: black;
@@ -37,7 +41,6 @@ ul, li {
 }
 
 /* CSS SIDEBAR - Sidebar Top */
-
 .logo_box {
     padding-bottom: 25px;
 }
@@ -113,7 +116,6 @@ ul, li {
 }
 
 /* CSS SIDEBAR - Sidebar Bottom */
-
 .sidebar_bottom {
     color: grey;
 }
@@ -139,13 +141,13 @@ ul, li {
     cursor: pointer;
 }
 
-.box_img_profile span {
+.nome_profilo {
     color: white;
     font-weight: 700;
 }
 
 /* Smartphone */
-@media (max-width:480px) {
+@media (max-width:600px) {
     .logo_desktop {
         display: none;
     }
@@ -191,13 +193,56 @@ ul, li {
         flex-direction: column;
     }    
 }
- /* FINE CSS SIDEBAR */
+/* FINE CSS SIDEBAR */
 
+/* MAIN */
 .contenuto {
     flex-grow: 1;
     overflow: scroll;
     overflow-x: hidden;
     background-color: #141922;
+}
+
+.upgrade {
+    height: 110px;
+    background-color: #080B12;
+    padding-top: 20px;
+}
+
+.bottone_upgrade {
+    width: 200px;
+    font-size: 13px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 25px;
+    margin-left: auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.titoli_card {
+    color: gray;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 15px;gray;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.titolo_active {
+    align-items: center;
+}
+
+.barra_verde {
+    height: 2px;
+    background-color: #ADFF2F;
+    width: 30px;
+    margin-top: 3px;
 }
 
 /* FOOTER */
@@ -287,6 +332,7 @@ ul, li {
     font-size: 13px;
 }
 
+/* COLONNA 3 */
 .col-3 {
     justify-content: flex-end;
 }
@@ -314,9 +360,7 @@ ul, li {
         flex-direction: column;
         margin-left: -20px;
     }
-
 }
-
 
 @media (max-width:600px) {
     .icon_song {
@@ -354,8 +398,5 @@ ul, li {
     .dettagli_brano {
         margin-left: -27px;
 
-    /* .nome_artista {
-        font-size: 9px;
-    } */
     }
 }
