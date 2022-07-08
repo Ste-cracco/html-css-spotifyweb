@@ -221,6 +221,7 @@ ul, li {
     border-radius: 25px;
     margin-left: auto;
     font-weight: 600;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -237,6 +238,7 @@ ul, li {
 
 .titolo_main_active {
     align-items: center;
+    color: white;
 }
 
 .barra_verde {
@@ -252,7 +254,7 @@ ul, li {
 
 .titolo_cards {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;    
 }
 
@@ -277,7 +279,17 @@ ul, li {
     align-items: center;
     aspect-ratio: 1/1;
     gap: 13px;
+    cursor: pointer;
 }
+/* .tasto_play {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    color: white;
+    font-size: 50px;
+    transform: translate(50%,-50%);
+    display: none;
+} */
 
 .titolo_brano {
     color: white;
@@ -362,13 +374,14 @@ ul, li {
 .icon_player {
     color: white;
     gap: 20px;
-    font-size: 15px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .col-2 i:nth-child(3) {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .container_barra_canzone {
@@ -389,6 +402,15 @@ ul, li {
     min-width: 4%;
     background-color: #C1C1C1;
 }
+
+/* .cerchio {
+    background-color: white;
+    border-radius: 100px;
+    height: 13px;
+    width: 13px;
+    align-self: center;
+    display: inline-block;
+} */
 
 .container_barra_canzone span {
     color: white;
@@ -461,6 +483,63 @@ ul, li {
 
     .dettagli_brano {
         margin-left: -27px;
-
     }
 }
+
+/* HOVER */
+
+.card img:hover {
+    opacity: 0.5;
+}
+
+.titoli_main li:hover {
+    color: white;
+}
+
+.bottone_upgrade:hover {
+    transform: scale(1.2);
+}
+
+.sidebar li:hover, a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.playlist span:hover, h2:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.playlist i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.icon_song i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.col-2 i:nth-child(3):hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.barra_canzone_active:hover {
+    cursor: pointer;
+    background-color: rgb(19, 202, 19);
+}
+
+.cerchio:hover {
+    display: block;
+    background-color: rgb(19, 202, 19);
+}
+
+.barra_volume_active:hover {
+    cursor: pointer;
+    background-color: rgb(19, 202, 19);
+}
+
+
+
+
