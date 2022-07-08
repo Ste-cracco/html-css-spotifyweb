@@ -38,6 +38,7 @@ ul, li {
     background-color: black;
     padding: 20px;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 /* CSS SIDEBAR - Sidebar Top */
@@ -223,18 +224,18 @@ ul, li {
     cursor: pointer;
 }
 
-.titoli_card {
+.titoli_main {
     color: gray;
     gap: 15px;
     justify-content: center;
     padding: 20px;
     font-weight: 700;
-    font-size: 15px;gray;
+    font-size: 15px;
     gap: 15px;
     cursor: pointer;
 }
 
-.titolo_active {
+.titolo_main_active {
     align-items: center;
 }
 
@@ -243,6 +244,69 @@ ul, li {
     background-color: #ADFF2F;
     width: 30px;
     margin-top: 3px;
+}
+
+.container_main {
+    padding: 20px;
+}
+
+.titolo_cards {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;    
+}
+
+.sottotitolo_cards {
+    color: grey;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.container_main .row {
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.container_card {
+    gap: 15px;
+    width: calc(calc(100% - 75px) / 6)
+}
+
+.card {
+    align-items: center;
+    aspect-ratio: 1/1;
+    gap: 13px;
+}
+
+.titolo_brano {
+    color: white;
+    font-size: 19px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.artista_brano {
+    color: grey;
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.immagine_artista {
+    border-radius: 150px;
+}
+
+@media (max-width:1200px) {
+    .container_card {
+        width: calc(calc(100% - 45px) / 4);
+    }
+}
+
+@media (max-width:950px) {
+    .container_card {
+        width: calc(calc(100% - 15px) / 2);
+    }
 }
 
 /* FOOTER */
