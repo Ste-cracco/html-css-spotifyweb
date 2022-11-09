@@ -280,16 +280,28 @@ ul, li {
     aspect-ratio: 1/1;
     gap: 13px;
     cursor: pointer;
+    position: relative;
 }
-/* .tasto_play {
+
+.tasto_play {
     position: absolute;
     top: 50%;
     right: 50%;
     color: white;
     font-size: 50px;
     transform: translate(50%,-50%);
-    display: none;
-} */
+    display: ;  
+} none
+
+
+.container_image {
+    position: relative;
+}
+
+.container_image:hover {
+    opacity: 0.5;
+}
+
 
 .titolo_brano {
     color: white;
@@ -487,10 +499,6 @@ ul, li {
 }
 
 /* HOVER */
-
-.card img:hover {
-    opacity: 0.5;
-}
 
 .titoli_main li:hover {
     color: white;
